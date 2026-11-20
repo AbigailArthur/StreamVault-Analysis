@@ -31,24 +31,24 @@ These questions identify information needed to strengthen the analysis and suppo
 | Why were cast and director scores assigned zero weight? | Examined candidate-level talent counts and added individual actor/director historical performance metrics. Kept their ranking weights at zero because the available sample does not establish independent predictive value. | Talent findings can support qualitative negotiations but should not be treated as proof of future performance. |
 | How do we identify potentially valuable actors and directors? | Calculated individual film counts, median revenue-to-budget ratios, share of films above budget and median ratings. Used at least two films as a preliminary screening threshold. | Small samples and shared franchise appearances limit the strength of these signals. |
 | How do we select the final candidates? | Ranked franchise and standalone candidates separately and selected the top three franchise candidates and five standalone candidates in each period. | Final acquisition decisions require rights, pricing and audience-demand evidence. |
-| What happens when the recommendation changes between periods? | Generated a shortlist stability comparison to identify candidates appearing in both periods and those appearing in only one. | Kwame should consider the time-window differences before approving a shortlist. |
+| What happens when the recommendation changes between periods? | Generated a shortlist stability comparison to identify candidates appearing in both periods and those appearing in only one. | The client should consider the time-window differences before approving a shortlist. |
 | Can historical revenue-to-budget ratios determine the licensing budget allocation? | Used the ratios to screen historical performance and compare candidate groups. | No defensible dollar allocation can be made without licensing prices, rights terms and expected platform contribution. |
 
 ## 3. Technical and Reproducibility Questions
 
 | Question or challenge | What We Did / Solution Applied | Remaining limitation |
 |---|---|---|
-| Can the analysis run without manual data editing? | Built an automated pipeline covering acquisition, preparation, validation, feature engineering, comparison, candidate analysis, talent analysis and ranking. | Adjoa should verify the process from a clean clone. |
+| Can the analysis run without manual data editing? | Built an automated pipeline covering acquisition, preparation, validation, feature engineering, comparison, candidate analysis, talent analysis and ranking. Candidate and talent datasets are merged using candidate IDs and candidate types, with one-to-one validation. | A clean-clone test remains necessary. |
 | Can the project retrieve data for approximately 500 IDs? | Centralized API configuration, used automated acquisition and processing scripts, and avoided a fixed candidate count in the analysis design. | A full 500-ID run still needs to be tested to confirm runtime, API limits and memory use. |
 | How are API failures handled? | Recorded failed requests and preserved problematic source records in audit and quarantine outputs. | Future API failures or unavailable records may change the final candidate pool. |
-| How can another analyst configure the project? | Centralized paths and settings in `config.py` and provided `.env.example` for the TMDb access token. | Adjoa must provide her own valid TMDb token. |
+| How can another analyst configure the project? | Centralized paths and settings in `config.py` and provided `.env.example` for the TMDb access token. | Anyone running the acquisition pipeline must provide their own valid TMDb token. |
 | How can another analyst reproduce the analysis? | Provided `requirements.txt`, setup instructions and a single entry point through `python main.py`. | A clean-clone test on another computer remains necessary. |
 | Will results remain identical when rerun later? | Preserved the pipeline logic and generated analysis outputs from the retrieved data. | TMDb is a live source; ratings, popularity and other API data may change over time. |
 | How are analytical decisions documented? | Created four Architecture Decision Records covering data quality, franchise classification, financial metrics and ranking methodology. | Future changes to assumptions should be recorded in updated decision notes. |
 
 ## 4. Key Decisions Made Without Client Feedback
 
-Because no follow-up clarification was received from Kwame, the following working assumptions were applied:
+Because no follow-up clarification was received from the client, the following working assumptions were applied:
 
 1. TMDb was used as the primary source for movie details and credits.
 2. TMDb collection IDs were used to identify franchise groups.
@@ -57,7 +57,7 @@ Because no follow-up clarification was received from Kwame, the following workin
 5. Median film-level financial ratios were used to compare franchise and standalone performance.
 6. Candidate ranking used 50% return ratio, 25% rating and 25% popularity.
 7. Cast and director scores received zero ranking weight because their independent predictive value could not be established from the available data.
-8. At least two films were required for an individual actor or director to appear as an eligible preliminary talent signal.
+8. At least two represented films were required for an individual actor or director to qualify as a preliminary talent signal. This threshold supports descriptive analysis and does not establish statistical reliability.
 9. Historical revenue-to-budget ratios were treated as screening indicators, not licensing ROI.
 10. No specific dollar allocation of the $14 million budget was recommended because licensing costs and rights information were unavailable.
 

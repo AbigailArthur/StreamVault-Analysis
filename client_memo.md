@@ -6,11 +6,11 @@
 
 ## Executive Summary
 
-The analysis indicates that franchise bundles recorded higher median historical revenue-to-budget ratios than standalone films across both analysis periods. However, historical box-office performance does not establish future streaming returns or licensing profitability.
+The analysis indicates that franchise candidates recorded higher median historical revenue-to-budget ratios than standalone films across both analysis periods. However, historical box-office performance does not establish future streaming returns or licensing profitability.
 
 We recommend pursuing a balanced shortlist of franchise and standalone candidates, followed by commercial due diligence before committing the $14 million budget.
 
-For Adjoa, this provides a quick way to identify recommendations that remain consistent across different analysis periods, reducing the risk of relying on candidates whose rankings are sensitive to the selected timeframe.
+The analysis uses two periods: all available years and 2000 onward. Comparing both periods helps identify candidates that remain competitive across different time windows and those whose rankings change.
 
 ## Recommended Acquisition Shortlists
 
@@ -24,19 +24,33 @@ The rankings below use the final composite scores, not revenue-to-budget ratios 
 | 2 | The Godfather | The Avengers |
 | 3 | The Avengers | Harry Potter |
 
-**Standalone candidates**
+**Standalone candidates — All years**
 
-| Rank | All-years analysis | 2000-onward analysis |
-|---|---|---|
-| 1 | Spirited Away | Spirited Away |
-| 2 | Pulp Fiction | Inception |
-| 3 | Schindler's List | Interstellar |
-| 4 | Interstellar | Memento |
-| 5 | The Good, the Bad and the Ugly | The Departed |
+| Position | Candidate | Weighted score |
+|---|---|---:|
+| Joint 1st | Pulp Fiction | 0.828125 |
+| Joint 1st | Spirited Away | 0.828125 |
+| 3rd | Schindler's List | 0.812500 |
+| 4th | Interstellar | 0.765625 |
+| 5th | The Good, the Bad and the Ugly | 0.750000 |
 
-**Important change:** The Godfather Collection is replaced by Harry Potter in the top-three franchise shortlist in the 2000-onward analysis. The standalone shortlist also changes considerably between periods.
+Pulp Fiction and Spirited Away have identical composite scores and share first place.
 
-The Lord of the Rings, The Avengers, Spirited Away and Interstellar remain shortlisted in both periods, making them useful starting points for further investigation.
+**Standalone candidates — 2000 onward**
+
+| Rank | Candidate | Weighted score |
+|---|---|---:|
+| 1 | Spirited Away | 0.937500 |
+| Joint 2nd | Inception | 0.843750 |
+| Joint 2nd | Interstellar | 0.843750 |
+| 4th | Memento | 0.500000 |
+| 5th | The Departed | 0.468750 |
+
+Inception and Interstellar also have identical composite scores. Their displayed order should not be interpreted as a difference in overall composite performance.
+
+**Important changes:** The Godfather Collection is replaced by Harry Potter in the top-three franchise shortlist in the 2000-onward analysis. The standalone shortlist also changes considerably between periods.
+
+The Lord of the Rings, The Avengers, Spirited Away and Interstellar appear in both periods, making them useful starting points for further investigation.
 
 ## What the Comparison Shows
 
@@ -47,11 +61,13 @@ The Lord of the Rings, The Avengers, Spirited Away and Interstellar remain short
 | Franchise candidate units | 32 | 24 |
 | Standalone candidate units | 16 | 8 |
 
-Franchises show higher median historical ratios in both periods. This supports investigating franchise opportunities but does not justify automatically allocating more money to them.
+Franchise candidates show higher median historical ratios in both periods. This supports investigating franchise opportunities but does not justify automatically allocating more money to them.
 
 ## Talent and Deal Considerations
 
-Talent analysis identified historical performance signals associated with actors such as Harrison Ford and directors such as Steven Spielberg across all years. In the 2000-onward period, Peter Jackson and several Lord of the Rings lead actors also showed strong historical results. These are supporting signals, not proof that individual talent caused financial success.
+The individual talent analysis identified historical performance signals among actors such as Mark Hamill, Carrie Fisher and Harrison Ford, and director Steven Spielberg across all years.
+
+In the 2000-onward period, actors including Andy Serkis, Viggo Mortensen, Elijah Wood and Sean Astin, as well as director Carlos Saldanha, showed strong historical performance indicators. These findings are descriptive signals based on the available film sample, not proof that individual talent caused financial success.
 
 The Lord of the Rings Collection is the strongest franchise candidate, with a median historical revenue-to-budget ratio of **11.73x across three represented films**. This is approximately 2.1 times the all-years franchise median of 5.56x.
 
@@ -63,11 +79,16 @@ The supplied identifier file contained 126 rows rather than the expected 127. Fi
 
 Licensing prices, rights availability, territory restrictions, exclusivity terms and StreamVault audience data were not provided. Historical revenue-to-budget ratios are not net profit or licensing ROI.
 
-Before committing funds, StreamVault should obtain current title-level and bundle-level quotes, confirm rights and territories, assess audience demand, and compare acquisition costs against the $14 million budget.
+Before committing funds, StreamVault should:
+
+- Obtain current title-level and bundle-level licensing quotes.
+- Confirm rights availability, territories, exclusivity and licensing duration.
+- Assess audience demand using internal viewing and engagement data.
+- Compare acquisition costs against the $14 million budget.
+- Obtain the missing identifier and updated title data where possible.
 
 ## Final Recommendation
 
 Proceed with commercial due diligence on both franchise and standalone candidates. Prioritise opportunities that combine historical performance with confirmed rights availability, attractive licensing terms and demonstrated relevance to StreamVault's audience.
-
 
 **The objective is not simply to acquire historically successful films, but to secure a commercially viable catalogue within the $14 million budget.**

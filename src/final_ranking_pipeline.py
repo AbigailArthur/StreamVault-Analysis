@@ -22,13 +22,44 @@ def rank_candidates(period):
     candidates = pd.read_csv(OUTPUT_DIR / candidate_file)
     talent = pd.read_csv(OUTPUT_DIR / talent_file)
 
-    # Combine financial and talent results
+    # Validate merge keys before combining datasets
+    merge_keys = ["candidate_id", "candidate_type"]
+
+    for column in merge_keys:
+        if column not in candidates.columns:
+            raise ValueError(
+                f"Missing candidate column: {column}"
+            )
+        if column not in talent.columns:
+            raise ValueError(
+                f"Missing talent column: {column}"
+            )
+
+    if candidates.duplicated(merge_keys).any():
+        raise ValueError("Duplicate candidate keys found.")
+
+    if talent.duplicated(merge_keys).any():
+        raise ValueError("Duplicate talent keys found.")
+
+    # Merge using stable candidate identifiers
     data = candidates.merge(
-        talent.drop(columns=["period"], errors="ignore"),
-        on=["candidate_name", "candidate_type"],
-        how="left",
-        validate="one_to_one"
-    )
+    talent.drop(
+        columns=["period", "candidate_name"],
+        errors="ignore"
+    ),
+    on=merge_keys,
+    how="left",
+    validate="one_to_one",
+    indicator=True
+)
+    unmatched = (data["_merge"] == "left_only").sum()
+
+    if unmatched:
+        raise ValueError(
+            f"{unmatched} candidates have no matching talent records."
+        )
+
+    data = data.drop(columns=["_merge"])
 
     # Handle missing talent counts
     count_columns = [
@@ -48,7 +79,7 @@ def rank_candidates(period):
         data["director_count"] / data["movie_count"]
     )
 
-    # Coerce invalid values and replace infinities with missing values
+    # Define ranking indicators
     metrics = {
         "median_film_return": "return_score",
         "median_rating": "rating_score",
@@ -57,6 +88,7 @@ def rank_candidates(period):
         "directors_per_film": "director_score"
     }
 
+    # Convert ranking indicators to numeric values
     for column in metrics:
         data[column] = pd.to_numeric(
             data[column],
@@ -74,13 +106,13 @@ def rank_candidates(period):
             .fillna(0)
         )
 
-    # Calculate transparent weighted score
+    # Calculate weighted composite score
     data["weighted_score"] = sum(
         data[score] * weight
         for score, weight in WEIGHTS.items()
     )
 
-    # Require at least two represented films for a bundle shortlist
+    # Require at least two represented films for franchise shortlists
     data["shortlist_eligible"] = (
         (data["candidate_type"] == "Standalone")
         | (
@@ -91,6 +123,7 @@ def rank_candidates(period):
 
     data["period"] = period
 
+    # Sort candidates by category, eligibility and composite score
     data = data.sort_values(
         ["candidate_type", "shortlist_eligible", "weighted_score"],
         ascending=[True, False, False]
