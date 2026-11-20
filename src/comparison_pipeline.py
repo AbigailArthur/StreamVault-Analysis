@@ -1,10 +1,18 @@
 
 import time
+
 import pandas as pd
 
-from config import PROCESSED_DIR, OUTPUT_DIR
+from config import OUTPUT_DIR, PROCESSED_DIR
+
 
 def create_comparison_units(movies):
+    movies = movies.copy()
+
+    # Calculate each film's return only when its budget is positive
+    movies["film_revenue_to_budget"] = (
+        movies["revenue"] / movies["budget"].where(movies["budget"] > 0)
+    )
 
     # Identify franchise and standalone movies
     has_collection = (
@@ -16,6 +24,7 @@ def create_comparison_units(movies):
     standalone_movies = movies.loc[~has_collection].copy()
 
     # Aggregate franchise movies into collection-level bundles
+    # Return is the median of individual film ratios
     franchises = (
         franchise_movies
         .groupby(
@@ -26,38 +35,37 @@ def create_comparison_units(movies):
             movie_count=("id", "nunique"),
             total_budget=("budget", "sum"),
             total_revenue=("revenue", "sum"),
-            gross_minus_budget=("gross_minus_budget", "sum")
+            gross_minus_budget=("gross_minus_budget", "sum"),
+            revenue_to_budget=("film_revenue_to_budget", "median")
         )
-        .rename(columns={
-            "belongs_to_collection_id": "unit_id",
-            "belongs_to_collection_name": "unit_name"
-        })
+        .rename(
+            columns={
+                "belongs_to_collection_id": "unit_id",
+                "belongs_to_collection_name": "unit_name"
+            }
+        )
     )
 
     franchises["candidate_type"] = "Franchise"
 
-    franchises["revenue_to_budget"] = (
-        franchises["total_revenue"] / franchises["total_budget"]
-    )
-
     # Keep standalone movies as individual licensing candidates
     standalones = standalone_movies[
-        ["id", "title", "budget", "revenue", "gross_minus_budget"]
+        ["id", "title", "budget", "revenue", "gross_minus_budget",
+         "film_revenue_to_budget"]
     ].copy()
 
-    standalones = standalones.rename(columns={
-        "id": "unit_id",
-        "title": "unit_name",
-        "budget": "total_budget",
-        "revenue": "total_revenue"
-    })
+    standalones = standalones.rename(
+        columns={
+            "id": "unit_id",
+            "title": "unit_name",
+            "budget": "total_budget",
+            "revenue": "total_revenue",
+            "film_revenue_to_budget": "revenue_to_budget"
+        }
+    )
 
     standalones["movie_count"] = 1
     standalones["candidate_type"] = "Standalone"
-
-    standalones["revenue_to_budget"] = (
-        standalones["total_revenue"] / standalones["total_budget"]
-    )
 
     # Combine both licensing candidate types
     units = pd.concat(
@@ -69,7 +77,6 @@ def create_comparison_units(movies):
 
 
 def summarize_comparison(units, period):
-
     summary = (
         units.groupby("candidate_type")
         .agg(
@@ -91,7 +98,6 @@ def summarize_comparison(units, period):
 
 
 def run_comparison():
-
     start_time = time.perf_counter()
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -99,7 +105,8 @@ def run_comparison():
     movies = pd.read_csv(PROCESSED_DIR / "analysis_movies.csv")
 
     movies["release_year"] = pd.to_numeric(
-        movies["release_year"], errors="coerce"
+        movies["release_year"],
+        errors="coerce"
     )
 
     # All-years comparison
@@ -114,11 +121,13 @@ def run_comparison():
 
     # Create comparison summaries
     all_summary = summarize_comparison(
-        all_units, "All years"
+        all_units,
+        "All years"
     )
 
     recent_summary = summarize_comparison(
-        recent_units, "2000 onward"
+        recent_units,
+        "2000 onward"
     )
 
     comparison = pd.concat(
@@ -150,17 +159,24 @@ def run_comparison():
 
     print("\nCANDIDATE COUNTS")
     print("----------------")
-    print("All-years franchise bundles:",
-          len(all_units[all_units["candidate_type"] == "Franchise"]))
-    print("All-years standalone films:",
-          len(all_units[all_units["candidate_type"] == "Standalone"]))
-    print("2000-onward franchise bundles:",
-          len(recent_units[recent_units["candidate_type"] == "Franchise"]))
-    print("2000-onward standalone films:",
-          len(recent_units[recent_units["candidate_type"] == "Standalone"]))
+    print(
+        "All-years franchise bundles:",
+        len(all_units[all_units["candidate_type"] == "Franchise"])
+    )
+    print(
+        "All-years standalone films:",
+        len(all_units[all_units["candidate_type"] == "Standalone"])
+    )
+    print(
+        "2000-onward franchise bundles:",
+        len(recent_units[recent_units["candidate_type"] == "Franchise"])
+    )
+    print(
+        "2000-onward standalone films:",
+        len(recent_units[recent_units["candidate_type"] == "Standalone"])
+    )
 
     print("\nExecution time:", round(elapsed_time, 4), "seconds")
-
     print("\nComparison files saved successfully.")
 
 

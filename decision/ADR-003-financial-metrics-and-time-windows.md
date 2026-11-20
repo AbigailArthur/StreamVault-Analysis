@@ -1,4 +1,5 @@
 # ADR-003: Financial Metrics and Time-Window Selection
+**Franchise return calculation:** Franchise revenue-to-budget performance is measured using the median of individual film revenue-to-budget ratios, rather than total franchise revenue divided by total franchise budget. This keeps the comparison methodology consistent with candidate analysis and prevents larger-budget films from disproportionately influencing the franchise-level return metric. Films with zero or negative budgets are excluded from this ratio calculation because their returns cannot be meaningfully calculated.
 
 **Status:** Accepted
 
