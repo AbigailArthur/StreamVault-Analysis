@@ -1,11 +1,12 @@
 
 import time
+
 import pandas as pd
 
 from config import OUTPUT_DIR, WEIGHTS
 
-def rank_candidates(period):
 
+def rank_candidates(period):
     candidate_file = (
         "candidate_metrics_all_years.csv"
         if period == "All years"
@@ -47,7 +48,7 @@ def rank_candidates(period):
         data["director_count"] / data["movie_count"]
     )
 
-    # Remove infinite or missing values before ranking
+    # Coerce invalid values and replace infinities with missing values
     metrics = {
         "median_film_return": "return_score",
         "median_rating": "rating_score",
@@ -58,8 +59,12 @@ def rank_candidates(period):
 
     for column in metrics:
         data[column] = pd.to_numeric(
-            data[column], errors="coerce"
-        ).replace([float("inf"), float("-inf")], float("nan"))
+            data[column],
+            errors="coerce"
+        ).replace(
+            [float("inf"), float("-inf")],
+            float("nan")
+        )
 
     # Rank each indicator within its candidate category
     for source, score in metrics.items():
@@ -84,7 +89,7 @@ def rank_candidates(period):
         )
     )
 
-    data["period"]=period
+    data["period"] = period
 
     data = data.sort_values(
         ["candidate_type", "shortlist_eligible", "weighted_score"],
@@ -95,8 +100,8 @@ def rank_candidates(period):
 
 
 def run_pipeline():
-
     start = time.perf_counter()
+
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     all_years = rank_candidates("All years")
@@ -117,7 +122,6 @@ def run_pipeline():
         ("all_years", all_years),
         ("2000_onward", recent)
     ]:
-
         eligible = data[data["shortlist_eligible"]]
 
         franchises = (
