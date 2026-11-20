@@ -1,0 +1,23 @@
+# Environment variables and secrets
+.env
+.env.*
+
+# Allow the example environment template
+!.env.example
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,397 @@
+period,talent_type,person_id,person_name,film_count,median_revenue_to_budget,share_films_revenue_above_budget,median_vote_average,median_popularity,film_titles,eligible_for_signal
+All years,Director,488,Steven Spielberg,8,13.252107011363638,1.0,7.773,11.4668,Indiana Jones and the Kingdom of the Crystal Skull; Indiana Jones and the Last Crusade; Indiana Jones and the Temple of Doom; Jaws; Jurassic Park; Raiders of the Lost Ark; Schindler's List; The Lost World: Jurassic Park,True
+All years,Director,24,Robert Zemeckis,4,10.318835107954545,1.0,8.058,17.498450000000002,Back to the Future; Back to the Future Part II; Back to the Future Part III; Forrest Gump,True
+All years,Director,2710,James Cameron,3,9.908997567567567,1.0,7.97,18.7406,Aliens; Terminator 2: Judgment Day; The Terminator,True
+All years,Director,7879,John Lasseter,2,9.449162838888888,1.0,7.8065,21.245150000000002,Toy Story; Toy Story 2,True
+All years,Director,5714,Carlos Saldanha,2,9.057280097222222,1.0,6.7585,11.423449999999999,Ice Age: Dawn of the Dinosaurs; Ice Age: The Meltdown,True
+All years,Director,10965,Chris Columbus,2,8.50094087,1.0,7.8075,34.8812,Harry Potter and the Chamber of Secrets; Harry Potter and the Philosopher's Stone,True
+All years,Director,1,George Lucas,4,8.311128942554829,1.0,7.038,10.50965,Star Wars; Star Wars: Episode I - The Phantom Menace; Star Wars: Episode II - Attack of the Clones; Star Wars: Episode III - Revenge of the Sith,True
+All years,Director,1776,Francis Ford Coppola,3,7.892307692307693,1.0,8.573,25.7646,The Godfather; The Godfather Part II; The Godfather Part III,True
+All years,Director,19271,Anthony Russo,2,7.553626813127341,1.0,8.2235,66.49045,Avengers: Endgame; Avengers: Infinity War,True
+All years,Director,19272,Joe Russo,2,7.553626813127341,1.0,8.2235,66.49045,Avengers: Endgame; Avengers: Infinity War,True
+All years,Director,5524,Andrew Adamson,2,7.189111145,1.0,7.5665,18.33615,Shrek; Shrek 2,True
+All years,Director,108,Peter Jackson,6,6.726983286537634,1.0,8.006499999999999,25.57235,The Hobbit: An Unexpected Journey; The Hobbit: The Battle of the Five Armies; The Hobbit: The Desolation of Smaug; The Lord of the Rings: The Fellowship of the Ring; The Lord of the Rings: The Return of the King; The Lord of the Rings: The Two Towers,True
+All years,Director,12891,Joss Whedon,2,6.442074068713733,1.0,7.6815,36.92985,Avengers: Age of Ultron; The Avengers,True
+All years,Director,138,Quentin Tarantino,3,6.030202533333333,1.0,7.97,14.6668,Kill Bill: Vol. 1; Kill Bill: Vol. 2; Pulp Fiction,True
+All years,Director,7087,Brad Bird,2,5.827313879310346,1.0,7.426,12.291799999999999,Mission: Impossible - Ghost Protocol; The Incredibles,True
+All years,Director,578,Ridley Scott,2,5.514670603896104,1.0,8.0565,19.969549999999998,Alien; Blade Runner,True
+All years,Director,25598,Paul Greengrass,2,5.086364337142857,1.0,7.394500000000001,8.700050000000001,The Bourne Supremacy; The Bourne Ultimatum,True
+All years,Director,11343,David Yates,4,5.035987529333333,1.0,7.7065,24.4542,Harry Potter and the Deathly Hallows: Part 1; Harry Potter and the Deathly Hallows: Part 2; Harry Potter and the Half-Blood Prince; Harry Potter and the Order of the Phoenix,True
+All years,Director,9339,Lilly Wachowski,3,4.923998006666666,1.0,7.087,14.6776,The Matrix; The Matrix Reloaded; The Matrix Revolutions,True
+All years,Director,9340,Lana Wachowski,3,4.923998006666666,1.0,7.087,14.6776,The Matrix; The Matrix Reloaded; The Matrix Revolutions,True
+All years,Director,1704,Gore Verbinski,3,4.6786516,1.0,7.393,17.1258,Pirates of the Caribbean: At World's End; Pirates of the Caribbean: Dead Man's Chest; Pirates of the Caribbean: The Curse of the Black Pearl,True
+All years,Director,1090,John McTiernan,2,4.547611644444444,1.0,7.5535,12.6234,Die Hard; Die Hard: With a Vengeance,True
+All years,Director,525,Christopher Nolan,7,4.451123111111111,1.0,8.212,20.6789,Batman Begins; Inception; Interstellar; Memento; The Dark Knight; The Dark Knight Rises; The Prestige,True
+All years,Director,1150,Brian De Palma,2,4.18106902375,1.0,7.595,14.70805,Mission: Impossible; Scarface,True
+All years,Director,1884,Steven Soderbergh,3,3.6625014588235296,1.0,6.738,7.8792,Ocean's Eleven; Ocean's Thirteen; Ocean's Twelve,True
+All years,Director,15277,Jon Favreau,2,3.6497412632142856,1.0,7.2620000000000005,24.549950000000003,Iron Man; Iron Man 2,True
+All years,Director,1032,Martin Scorsese,2,2.5606965400000004,1.0,8.306000000000001,19.5349,GoodFellas; The Departed,True
+All years,Director,7467,David Fincher,2,2.398162061111111,1.0,7.414,22.437,Alien³; Fight Club,True
+All years,Director,4385,Sergio Leone,1,32.416666666666664,1.0,8.468,18.5304,"The Good, the Bad and the Ugly",False
+All years,Director,10930,Irvin Kershner,1,29.91111111111111,1.0,8.392,14.0519,The Empire Strikes Back,False
+All years,Director,19800,Richard Marquand,1,17.7032457496136,1.0,7.9,9.8817,Return of the Jedi,False
+All years,Director,15812,Roger Allers,1,16.96567913333333,1.0,8.25,21.2537,The Lion King,False
+All years,Director,18898,Rob Minkoff,1,16.96567913333333,1.0,8.25,21.2537,The Lion King,False
+All years,Director,608,Hayao Miyazaki,1,14.469741842105263,1.0,8.537,49.6655,Spirited Away,False
+All years,Director,16294,Jonathan Demme,1,14.354890631578947,1.0,8.346,5.3795,The Silence of the Lambs,False
+All years,Director,8858,Ivan Reitman,1,9.888004,1.0,7.496,10.3828,Ghostbusters,False
+All years,Director,12058,Vicky Jenson,1,8.161270683333333,1.0,7.8,21.9691,Shrek,False
+All years,Director,5713,Chris Wedge,1,6.495883661016949,1.0,7.388,16.8012,Ice Age,False
+All years,Director,12079,Kelly Asbury,1,6.216951606666667,1.0,7.333,14.7032,Shrek 2,False
+All years,Director,12080,Conrad Vernon,1,6.216951606666667,1.0,7.333,14.7032,Shrek 2,False
+All years,Director,84496,Josh Cooley,1,6.1362365371428576,1.0,7.459,12.2917,Toy Story 4,False
+All years,Director,1108,Shane Black,1,6.077886025,1.0,6.932,19.0453,Iron Man 3,False
+All years,Director,11218,Alfonso Cuarón,1,6.075419646153846,1.0,8.014,27.1101,Harry Potter and the Prisoner of Azkaban,False
+All years,Director,10723,Mike Newell,1,5.9728069066666665,1.0,7.804,31.3937,Harry Potter and the Goblet of Fire,False
+All years,Director,8,Lee Unkrich,1,5.336580505,1.0,7.818,14.2103,Toy Story 3,False
+All years,Director,1215,Raja Gosnell,1,5.124993845454545,1.0,5.753,5.4116,The Smurfs,False
+All years,Director,12098,Chris Miller,1,5.05193866875,1.0,6.317,10.1869,Shrek the Third,False
+All years,Director,12890,Pete Docter,1,5.0,1.0,7.86,20.3118,"Monsters, Inc.",False
+All years,Director,64151,Mike Mitchell,1,4.561217375757575,1.0,6.4,12.7559,Shrek Forever After,False
+All years,Director,9033,Christopher McQuarrie,1,4.55144424,1.0,7.228,9.878,Mission: Impossible - Rogue Nation,False
+All years,Director,11401,John Woo,1,4.371104864,1.0,6.14,7.8477,Mission: Impossible II,False
+All years,Director,4945,Joe Johnston,1,3.9653850430107527,1.0,6.179,0.4636,Jurassic Park III,False
+All years,Director,11694,Doug Liman,1,3.567237066666667,1.0,7.491,10.8776,The Bourne Identity,False
+All years,Director,3950,Len Wiseman,1,3.486649672727273,1.0,6.643,8.8506,Live Free or Die Hard,False
+All years,Director,20307,Joachim Rønning,1,3.4605317304347825,1.0,6.666,12.9022,Pirates of the Caribbean: Dead Men Tell No Tales,False
+All years,Director,20308,Espen Sandberg,1,3.4605317304347825,1.0,6.666,12.9022,Pirates of the Caribbean: Dead Men Tell No Tales,False
+All years,Director,16938,Renny Harlin,1,3.4290156285714284,1.0,6.972,8.8755,Die Hard 2,False
+All years,Director,7,Andrew Stanton,1,2.896177,1.0,8.129,19.041,WALL·E,False
+All years,Director,17633,Rob Marshall,1,2.761797535620053,1.0,6.576,14.6131,Pirates of the Caribbean: On Stranger Tides,False
+All years,Director,15344,J.J. Abrams,1,2.65652998,1.0,6.769,8.3875,Mission: Impossible III,False
+All years,Director,20629,George Miller,1,2.5257222666666665,1.0,7.642,20.4631,Mad Max: Fury Road,False
+All years,Director,2419,Jean-Pierre Jeunet,1,2.3142857142857145,1.0,6.172,7.7111,Alien Resurrection,False
+All years,Director,7213,Jonathan Mostow,1,2.175,1.0,6.216,9.9381,Terminator 3: Rise of the Machines,False
+All years,Director,36425,McG,1,1.856765005,1.0,6.108,8.0596,Terminator Salvation,False
+All years,Director,6431,Darren Aronofsky,1,1.6422462222222223,1.0,8.007,5.3724,Requiem for a Dream,False
+All years,Director,4027,Frank Darabont,1,1.13365876,1.0,8.734,45.414,The Shawshank Redemption,False
+All years,Lead actor,2,Mark Hamill,3,29.91111111111111,1.0,8.206,14.0519,Return of the Jedi; Star Wars; The Empire Strikes Back,True
+All years,Lead actor,4,Carrie Fisher,3,29.91111111111111,1.0,8.206,14.0519,Return of the Jedi; Star Wars; The Empire Strikes Back,True
+All years,Lead actor,3087,Robert Duvall,2,24.368354762820516,1.0,8.631,34.0936,The Godfather; The Godfather Part II,True
+All years,Lead actor,6,Anthony Daniels,2,23.807178430362356,1.0,8.146,11.9668,Return of the Jedi; The Empire Strikes Back,True
+All years,Lead actor,3799,Billy Dee Williams,2,23.807178430362356,1.0,8.146,11.9668,Return of the Jedi; The Empire Strikes Back,True
+All years,Lead actor,3265,Eli Wallach,2,17.47468575925926,1.0,7.9405,16.10385,"The Godfather Part III; The Good, the Bad and the Ugly",True
+All years,Lead actor,655,John Rhys-Davies,2,15.770566618055554,1.0,7.8934999999999995,12.7503,Indiana Jones and the Last Crusade; Raiders of the Lost Ark,True
+All years,Lead actor,3,Harrison Ford,8,14.7999669998068,1.0,7.914,13.181799999999999,Blade Runner; Indiana Jones and the Kingdom of the Crystal Skull; Indiana Jones and the Last Crusade; Indiana Jones and the Temple of Doom; Raiders of the Lost Ark; Return of the Jedi; Star Wars; The Empire Strikes Back,True
+All years,Lead actor,650,Karen Allen,2,12.957320304654655,1.0,6.9775,11.4611,Indiana Jones and the Kingdom of the Crystal Skull; Raiders of the Lost Ark,True
+All years,Lead actor,5469,Ralph Fiennes,2,12.669807762363636,1.0,8.3255,23.79795,Harry Potter and the Deathly Hallows: Part 2; Schindler's List,True
+All years,Lead actor,4785,Jeff Goldblum,2,12.637683814633617,1.0,7.271000000000001,5.4582,Jurassic Park; The Lost World: Jurassic Park,True
+All years,Lead actor,4786,Richard Attenborough,2,12.637683814633617,1.0,7.271000000000001,5.4582,Jurassic Park; The Lost World: Jurassic Park,True
+All years,Lead actor,1333,Andy Serkis,2,11.814115603353084,1.0,8.4705,31.4781,The Lord of the Rings: The Return of the King; The Lord of the Rings: The Two Towers,True
+All years,Lead actor,109,Elijah Wood,3,11.725156962025316,1.0,8.5,34.2357,The Lord of the Rings: The Fellowship of the Ring; The Lord of the Rings: The Return of the King; The Lord of the Rings: The Two Towers,True
+All years,Lead actor,110,Viggo Mortensen,3,11.725156962025316,1.0,8.5,34.2357,The Lord of the Rings: The Fellowship of the Ring; The Lord of the Rings: The Return of the King; The Lord of the Rings: The Two Towers,True
+All years,Lead actor,1328,Sean Astin,3,11.725156962025316,1.0,8.5,34.2357,The Lord of the Rings: The Fellowship of the Ring; The Lord of the Rings: The Return of the King; The Lord of the Rings: The Two Towers,True
+All years,Lead actor,2712,Michael Biehn,2,11.077248783783784,1.0,7.835,16.6301,Aliens; The Terminator,True
+All years,Lead actor,2714,Lance Henriksen,2,11.077248783783784,1.0,7.835,16.6301,Aliens; The Terminator,True
+All years,Lead actor,16940,Jeremy Irons,2,10.51673771111111,1.0,7.7695,15.83745,Die Hard: With a Vengeance; The Lion King,True
+All years,Lead actor,4783,Sam Neill,2,10.383122918330773,1.0,7.078,5.39185,Jurassic Park; Jurassic Park III,True
+All years,Lead actor,349,Scott Glenn,2,10.34047487293233,1.0,7.898,7.21565,The Bourne Ultimatum; The Silence of the Lambs,True
+All years,Lead actor,10205,Sigourney Weaver,5,9.539254636363637,1.0,7.496,10.3828,Alien; Alien Resurrection; Aliens; Alien³; Ghostbusters,True
+All years,Lead actor,12900,Wallace Shawn,2,9.354256402499999,1.0,7.904,19.2726,Toy Story; Toy Story 3,True
+All years,Lead actor,3896,Liam Neeson,3,9.100133991304348,1.0,7.733,18.1643,Batman Begins; Schindler's List; Star Wars: Episode I - The Phantom Menace,True
+All years,Lead actor,57599,Seann William Scott,2,9.057280097222222,1.0,6.7585,11.423449999999999,Ice Age: Dawn of the Dinosaurs; Ice Age: The Meltdown,True
+All years,Lead actor,2713,Linda Hamilton,2,8.661054779411764,1.0,7.939,20.207900000000002,Terminator 2: Judgment Day; The Terminator,True
+All years,Lead actor,521,Michael J. Fox,3,8.321529925,1.0,7.784,9.8404,Back to the Future; Back to the Future Part II; Back to the Future Part III,True
+All years,Lead actor,1062,Christopher Lloyd,3,8.321529925,1.0,7.784,9.8404,Back to the Future; Back to the Future Part II; Back to the Future Part III,True
+All years,Lead actor,1063,Lea Thompson,3,8.321529925,1.0,7.784,9.8404,Back to the Future; Back to the Future Part II; Back to the Future Part III,True
+All years,Lead actor,27762,Ian McDiarmid,2,8.311128942554829,1.0,7.0305,10.50965,Star Wars: Episode I - The Phantom Menace; Star Wars: Episode III - Revenge of the Sith,True
+All years,Lead actor,5723,John Leguizamo,3,8.26248445,1.0,6.784,12.0537,Ice Age; Ice Age: Dawn of the Dinosaurs; Ice Age: The Meltdown,True
+All years,Lead actor,5724,Denis Leary,3,8.26248445,1.0,6.784,12.0537,Ice Age; Ice Age: Dawn of the Dinosaurs; Ice Age: The Meltdown,True
+All years,Lead actor,15757,Ray Romano,3,8.26248445,1.0,6.784,12.0537,Ice Age; Ice Age: Dawn of the Dinosaurs; Ice Age: The Meltdown,True
+All years,Lead actor,4566,Alan Rickman,2,7.879758376,1.0,7.9495,19.8039,Die Hard; Harry Potter and the Deathly Hallows: Part 2,True
+All years,Lead actor,524,Natalie Portman,3,7.522123893805309,1.0,6.597,10.4367,Star Wars: Episode I - The Phantom Menace; Star Wars: Episode II - Attack of the Clones; Star Wars: Episode III - Revenge of the Sith,True
+All years,Lead actor,3061,Ewan McGregor,3,7.522123893805309,1.0,6.597,10.4367,Star Wars: Episode I - The Phantom Menace; Star Wars: Episode II - Attack of the Clones; Star Wars: Episode III - Revenge of the Sith,True
+All years,Lead actor,1065,Thomas F. Wilson,2,7.22423475,1.0,7.638999999999999,8.6822,Back to the Future Part II; Back to the Future Part III,True
+All years,Lead actor,103,Mark Ruffalo,4,6.872545174848485,1.0,8.1425,44.300399999999996,Avengers: Age of Ultron; Avengers: Endgame; Avengers: Infinity War; The Avengers,True
+All years,Lead actor,16828,Chris Evans,4,6.872545174848485,1.0,8.1425,44.300399999999996,Avengers: Age of Ultron; Avengers: Endgame; Avengers: Infinity War; The Avengers,True
+All years,Lead actor,74568,Chris Hemsworth,4,6.872545174848485,1.0,8.1425,44.300399999999996,Avengers: Age of Ultron; Avengers: Endgame; Avengers: Infinity War; The Avengers,True
+All years,Lead actor,1327,Ian McKellen,6,6.726983286537634,1.0,8.006499999999999,25.57235,The Hobbit: An Unexpected Journey; The Hobbit: The Battle of the Five Armies; The Hobbit: The Desolation of Smaug; The Lord of the Rings: The Fellowship of the Ring; The Lord of the Rings: The Return of the King; The Lord of the Rings: The Two Towers,True
+All years,Lead actor,2231,Samuel L. Jackson,4,6.466888313569322,1.0,7.384,10.42895,Die Hard: With a Vengeance; Pulp Fiction; Star Wars: Episode II - Attack of the Clones; Star Wars: Episode III - Revenge of the Sith,True
+All years,Lead actor,17244,Hayden Christensen,2,6.466888313569322,1.0,7.038,9.59795,Star Wars: Episode II - Attack of the Clones; Star Wars: Episode III - Revenge of the Sith,True
+All years,Lead actor,1245,Scarlett Johansson,4,6.442074068713733,1.0,7.6815,36.92985,Avengers: Age of Ultron; Avengers: Endgame; Iron Man 2; The Avengers,True
+All years,Lead actor,13014,Toby Jones,2,6.292054146,1.0,7.721,26.844549999999998,Harry Potter and the Chamber of Secrets; Harry Potter and the Deathly Hallows: Part 1,True
+All years,Lead actor,10980,Daniel Radcliffe,8,6.1650856164102565,1.0,7.768000000000001,26.200899999999997,Harry Potter and the Chamber of Secrets; Harry Potter and the Deathly Hallows: Part 1; Harry Potter and the Deathly Hallows: Part 2; Harry Potter and the Goblet of Fire; Harry Potter and the Half-Blood Prince; Harry Potter and the Order of the Phoenix; Harry Potter and the Philosopher's Stone; Harry Potter and the Prisoner of Azkaban,True
+All years,Lead actor,10989,Rupert Grint,8,6.1650856164102565,1.0,7.768000000000001,26.200899999999997,Harry Potter and the Chamber of Secrets; Harry Potter and the Deathly Hallows: Part 1; Harry Potter and the Deathly Hallows: Part 2; Harry Potter and the Goblet of Fire; Harry Potter and the Half-Blood Prince; Harry Potter and the Order of the Phoenix; Harry Potter and the Philosopher's Stone; Harry Potter and the Prisoner of Azkaban,True
+All years,Lead actor,10990,Emma Watson,8,6.1650856164102565,1.0,7.768000000000001,26.200899999999997,Harry Potter and the Chamber of Secrets; Harry Potter and the Deathly Hallows: Part 1; Harry Potter and the Deathly Hallows: Part 2; Harry Potter and the Goblet of Fire; Harry Potter and the Half-Blood Prince; Harry Potter and the Order of the Phoenix; Harry Potter and the Philosopher's Stone; Harry Potter and the Prisoner of Azkaban,True
+All years,Lead actor,31,Tom Hanks,5,6.1362365371428576,1.0,7.818,18.1554,Forrest Gump; Toy Story; Toy Story 2; Toy Story 3; Toy Story 4,True
+All years,Lead actor,3223,Robert Downey Jr.,7,6.077886025,1.0,7.668,32.5408,Avengers: Age of Ultron; Avengers: Endgame; Avengers: Infinity War; Iron Man; Iron Man 2; Iron Man 3; The Avengers,True
+All years,Lead actor,139,Uma Thurman,3,6.030202533333333,1.0,7.97,14.6668,Kill Bill: Vol. 1; Kill Bill: Vol. 2; Pulp Fiction,True
+All years,Lead actor,5658,Michael Gambon,3,5.9728069066666665,1.0,7.804,27.1101,Harry Potter and the Goblet of Fire; Harry Potter and the Half-Blood Prince; Harry Potter and the Prisoner of Azkaban,True
+All years,Lead actor,12898,Tim Allen,4,5.831314957460318,1.0,7.7204999999999995,16.182850000000002,Toy Story; Toy Story 2; Toy Story 3; Toy Story 4,True
+All years,Lead actor,776,Eddie Murphy,4,5.634445137708333,1.0,6.8665,13.72955,Shrek; Shrek 2; Shrek Forever After; Shrek the Third,True
+All years,Lead actor,6941,Cameron Diaz,4,5.634445137708333,1.0,6.8665,13.72955,Shrek; Shrek 2; Shrek Forever After; Shrek the Third,True
+All years,Lead actor,12073,Mike Myers,4,5.634445137708333,1.0,6.8665,13.72955,Shrek; Shrek 2; Shrek Forever After; Shrek the Third,True
+All years,Lead actor,5823,Julie Andrews,2,5.634445137708333,1.0,6.825,12.44505,Shrek 2; Shrek the Third,True
+All years,Lead actor,141,David Carradine,2,5.551092283333333,1.0,7.9205000000000005,13.021799999999999,Kill Bill: Vol. 1; Kill Bill: Vol. 2,True
+All years,Lead actor,589,Daryl Hannah,2,5.551092283333333,1.0,7.9205000000000005,13.021799999999999,Kill Bill: Vol. 1; Kill Bill: Vol. 2,True
+All years,Lead actor,7167,Don Rickles,3,5.526393377777778,1.0,7.818,18.1554,Toy Story; Toy Story 2; Toy Story 3,True
+All years,Lead actor,3234,Joan Cusack,2,5.431486941388888,1.0,7.7204999999999995,16.182850000000002,Toy Story 2; Toy Story 3,True
+All years,Lead actor,529,Guy Pearce,2,5.264504568055555,1.0,7.5535000000000005,16.9491,Iron Man 3; Memento,True
+All years,Lead actor,3092,Diane Keaton,2,5.212506272079772,1.0,7.993,19.720950000000002,The Godfather Part II; The Godfather Part III,True
+All years,Lead actor,12041,Julia Stiles,2,5.086364337142857,1.0,7.394500000000001,8.700050000000001,The Bourne Supremacy; The Bourne Ultimatum,True
+All years,Lead actor,1100,Arnold Schwarzenegger,3,5.076609558823529,1.0,7.7,18.7406,Terminator 2: Judgment Day; Terminator 3: Rise of the Machines; The Terminator,True
+All years,Lead actor,3131,Antonio Banderas,3,5.05193866875,1.0,6.4,12.7559,Shrek 2; Shrek Forever After; Shrek the Third,True
+All years,Lead actor,1331,Hugo Weaving,3,4.923998006666666,1.0,7.087,14.6776,The Matrix; The Matrix Reloaded; The Matrix Revolutions,True
+All years,Lead actor,2975,Laurence Fishburne,3,4.923998006666666,1.0,7.087,14.6776,The Matrix; The Matrix Reloaded; The Matrix Revolutions,True
+All years,Lead actor,6384,Keanu Reeves,3,4.923998006666666,1.0,7.087,14.6776,The Matrix; The Matrix Reloaded; The Matrix Revolutions,True
+All years,Lead actor,380,Robert De Niro,2,4.887600386153847,1.0,8.5125,23.03785,GoodFellas; The Godfather Part II,True
+All years,Lead actor,11108,Simon Pegg,3,4.79112675862069,1.0,7.122,9.878,Ice Age: Dawn of the Dinosaurs; Mission: Impossible - Ghost Protocol; Mission: Impossible - Rogue Nation,True
+All years,Lead actor,24045,Joseph Gordon-Levitt,2,4.78405329275,1.0,8.087,35.214299999999994,Inception; The Dark Knight Rises,True
+All years,Lead actor,530,Carrie-Anne Moss,4,4.6875605588888885,1.0,7.631,14.76525,Memento; The Matrix; The Matrix Reloaded; The Matrix Revolutions,True
+All years,Lead actor,116,Keira Knightley,3,4.6786516,1.0,7.393,17.1258,Pirates of the Caribbean: At World's End; Pirates of the Caribbean: Dead Man's Chest; Pirates of the Caribbean: The Curse of the Black Pearl,True
+All years,Lead actor,1709,Jack Davenport,3,4.6786516,1.0,7.393,17.1258,Pirates of the Caribbean: At World's End; Pirates of the Caribbean: Dead Man's Chest; Pirates of the Caribbean: The Curse of the Black Pearl,True
+All years,Lead actor,17604,Jeremy Renner,2,4.671285499310345,1.0,7.175,9.573599999999999,Mission: Impossible - Ghost Protocol; Mission: Impossible - Rogue Nation,True
+All years,Lead actor,500,Tom Cruise,5,4.55144424,1.0,7.036,9.2692,Mission: Impossible; Mission: Impossible - Ghost Protocol; Mission: Impossible - Rogue Nation; Mission: Impossible II; Mission: Impossible III,True
+All years,Lead actor,10182,Ving Rhames,4,4.461274552000001,1.0,6.9985,9.13275,Mission: Impossible - Rogue Nation; Mission: Impossible II; Mission: Impossible III; Pulp Fiction,True
+All years,Lead actor,1813,Anne Hathaway,2,4.424527137636364,1.0,8.150500000000001,46.46345,Interstellar; The Dark Knight Rises,True
+All years,Lead actor,15556,Rebecca Hall,2,4.4098969,1.0,7.572,18.729,Iron Man 3; The Prestige,True
+All years,Lead actor,2524,Tom Hardy,3,4.324165148,1.0,7.801,20.6789,Inception; Mad Max: Fury Road; The Dark Knight Rises,True
+All years,Lead actor,1204,Julia Roberts,2,4.300114989304813,1.0,7.02,10.64205,Ocean's Eleven; Ocean's Twelve,True
+All years,Lead actor,6193,Leonardo DiCaprio,2,4.24122071875,1.0,8.2665,34.2542,Inception; The Departed,True
+All years,Lead actor,7673,Bonnie Bedelia,2,4.228221314285714,1.0,7.395,11.85055,Die Hard; Die Hard 2,True
+All years,Lead actor,12052,Gwyneth Paltrow,3,4.179815871428572,1.0,6.932,21.1095,Iron Man; Iron Man 2; Iron Man 3,True
+All years,Lead actor,62,Bruce Willis,5,4.067796288888889,1.0,7.289,10.4212,Die Hard; Die Hard 2; Die Hard: With a Vengeance; Live Free or Die Hard; Pulp Fiction,True
+All years,Lead actor,1271,Andy Garcia,2,3.9176297788671026,1.0,7.4405,13.5411,Ocean's Eleven; The Godfather Part III,True
+All years,Lead actor,9575,Jada Pinkett Smith,2,3.8786263733333333,1.0,6.925,12.3733,The Matrix Reloaded; The Matrix Revolutions,True
+All years,Lead actor,114,Orlando Bloom,5,3.8336,1.0,7.393,17.1258,Pirates of the Caribbean: At World's End; Pirates of the Caribbean: Dead Man's Chest; Pirates of the Caribbean: The Curse of the Black Pearl; The Hobbit: The Battle of the Five Armies; The Hobbit: The Desolation of Smaug,True
+All years,Lead actor,7060,Martin Freeman,3,3.8336,1.0,7.389,18.7851,The Hobbit: An Unexpected Journey; The Hobbit: The Battle of the Five Armies; The Hobbit: The Desolation of Smaug,True
+All years,Lead actor,30315,Richard Armitage,3,3.8336,1.0,7.389,18.7851,The Hobbit: An Unexpected Journey; The Hobbit: The Battle of the Five Armies; The Hobbit: The Desolation of Smaug,True
+All years,Lead actor,679,Franka Potente,2,3.7069533133333334,1.0,7.415,9.61295,The Bourne Identity; The Bourne Supremacy,True
+All years,Lead actor,1248,Brian Cox,2,3.7069533133333334,1.0,7.415,9.61295,The Bourne Identity; The Bourne Supremacy,True
+All years,Lead actor,1892,Matt Damon,7,3.6625014588235296,1.0,7.45,9.0518,Ocean's Eleven; Ocean's Thirteen; Ocean's Twelve; The Bourne Identity; The Bourne Supremacy; The Bourne Ultimatum; The Departed,True
+All years,Lead actor,1158,Al Pacino,5,3.6625014588235296,1.0,8.154,18.4117,Ocean's Thirteen; Scarface; The Godfather; The Godfather Part II; The Godfather Part III,True
+All years,Lead actor,1461,George Clooney,3,3.6625014588235296,1.0,6.738,7.8792,Ocean's Eleven; Ocean's Thirteen; Ocean's Twelve,True
+All years,Lead actor,1896,Don Cheadle,3,3.6625014588235296,1.0,6.856,19.0453,Iron Man 2; Iron Man 3; Ocean's Thirteen,True
+All years,Lead actor,3895,Michael Caine,4,3.6333984511363635,1.0,8.356,35.4649,Batman Begins; Interstellar; The Dark Knight; The Prestige,True
+All years,Lead actor,2716,Earl Boen,2,3.6258047794117645,1.0,7.197000000000001,15.806650000000001,Terminator 2: Judgment Day; Terminator 3: Rise of the Machines,True
+All years,Lead actor,287,Brad Pitt,4,3.4800883657754014,1.0,7.103,10.64205,Fight Club; Ocean's Eleven; Ocean's Thirteen; Ocean's Twelve,True
+All years,Lead actor,85,Johnny Depp,5,3.4605317304347825,1.0,7.28,16.8197,Pirates of the Caribbean: At World's End; Pirates of the Caribbean: Dead Man's Chest; Pirates of the Caribbean: Dead Men Tell No Tales; Pirates of the Caribbean: On Stranger Tides; Pirates of the Caribbean: The Curse of the Black Pearl,True
+All years,Lead actor,64,Gary Oldman,2,3.4094781506666667,1.0,7.7669999999999995,19.421599999999998,Batman Begins; The Dark Knight Rises,True
+All years,Lead actor,118,Geoffrey Rush,4,3.333084546884058,1.0,6.973000000000001,15.7164,Pirates of the Caribbean: At World's End; Pirates of the Caribbean: Dead Men Tell No Tales; Pirates of the Caribbean: On Stranger Tides; Pirates of the Caribbean: The Curse of the Black Pearl,True
+All years,Lead actor,1283,Helena Bonham Carter,4,2.8369942385,1.0,7.702500000000001,24.1801,Fight Club; Harry Potter and the Deathly Hallows: Part 1; Harry Potter and the Order of the Phoenix; Terminator Salvation,True
+All years,Lead actor,3894,Christian Bale,5,2.741907775,1.0,7.801,18.4127,Batman Begins; Terminator Salvation; The Dark Knight; The Dark Knight Rises; The Prestige,True
+All years,Lead actor,6573,William Sadler,2,2.2813371942857144,1.0,7.853,27.144750000000002,Die Hard 2; The Shawshank Redemption,True
+All years,Lead actor,7499,Jared Leto,2,1.6215497222222224,1.0,8.222,21.15285,Fight Club; Requiem for a Dream,True
+All years,Lead actor,5,Peter Cushing,1,70.49072790909091,1.0,8.206,29.2803,Star Wars,False
+All years,Lead actor,12248,Alec Guinness,1,70.49072790909091,1.0,8.206,29.2803,Star Wars,False
+All years,Lead actor,3037,Richard Dreyfuss,1,67.23614285714285,1.0,7.687,12.3494,Jaws,False
+All years,Lead actor,6355,Roy Scheider,1,67.23614285714285,1.0,7.687,12.3494,Jaws,False
+All years,Lead actor,8606,Robert Shaw,1,67.23614285714285,1.0,7.687,12.3494,Jaws,False
+All years,Lead actor,8607,Lorraine Gary,1,67.23614285714285,1.0,7.687,12.3494,Jaws,False
+All years,Lead actor,8608,Murray Hamilton,1,67.23614285714285,1.0,7.687,12.3494,Jaws,False
+All years,Lead actor,3084,Marlon Brando,1,40.844401833333336,1.0,8.689,42.4226,The Godfather,False
+All years,Lead actor,3085,James Caan,1,40.844401833333336,1.0,8.689,42.4226,The Godfather,False
+All years,Lead actor,3086,Richard S. Castellano,1,40.844401833333336,1.0,8.689,42.4226,The Godfather,False
+All years,Lead actor,190,Clint Eastwood,1,32.416666666666664,1.0,8.468,18.5304,"The Good, the Bad and the Ugly",False
+All years,Lead actor,4078,Lee Van Cleef,1,32.416666666666664,1.0,8.468,18.5304,"The Good, the Bad and the Ugly",False
+All years,Lead actor,5813,Aldo Giuffrè,1,32.416666666666664,1.0,8.468,18.5304,"The Good, the Bad and the Ugly",False
+All years,Lead actor,5814,Luigi Pistilli,1,32.416666666666664,1.0,8.468,18.5304,"The Good, the Bad and the Ugly",False
+All years,Lead actor,8891,John Travolta,1,26.74109525,1.0,8.48,29.9996,Pulp Fiction,False
+All years,Lead actor,652,Paul Freeman,1,21.662553944444443,1.0,7.928,14.8787,Raiders of the Lost Ark,False
+All years,Lead actor,653,Ronald Lacey,1,21.662553944444443,1.0,7.928,14.8787,Raiders of the Lost Ark,False
+All years,Lead actor,1064,Crispin Glover,1,20.60772905263158,1.0,8.332,25.1565,Back to the Future,False
+All years,Lead actor,1066,Claudia Wells,1,20.60772905263158,1.0,8.332,25.1565,Back to the Future,False
+All years,Lead actor,4756,Matthew Broderick,1,16.96567913333333,1.0,8.25,21.2537,The Lion King,False
+All years,Lead actor,20005,Moira Kelly,1,16.96567913333333,1.0,8.25,21.2537,The Lion King,False
+All years,Lead actor,69415,Ernie Sabella,1,16.96567913333333,1.0,8.25,21.2537,The Lion King,False
+All years,Lead actor,78729,Nathan Lane,1,16.96567913333333,1.0,8.25,21.2537,The Lion King,False
+All years,Lead actor,4784,Laura Dern,1,16.800860793650795,1.0,7.977,10.3201,Jurassic Park,False
+All years,Lead actor,4789,Bob Peck,1,16.800860793650795,1.0,7.977,10.3201,Jurassic Park,False
+All years,Lead actor,2282,Ben Kingsley,1,14.607525772727273,1.0,8.57,22.8137,Schindler's List,False
+All years,Lead actor,6692,Caroline Goodall,1,14.607525772727273,1.0,8.57,22.8137,Schindler's List,False
+All years,Lead actor,6693,Jonathan Sagall,1,14.607525772727273,1.0,8.57,22.8137,Schindler's List,False
+All years,Lead actor,19587,Rumi Hiiragi,1,14.469741842105263,1.0,8.537,49.6655,Spirited Away,False
+All years,Lead actor,19588,Miyu Irino,1,14.469741842105263,1.0,8.537,49.6655,Spirited Away,False
+All years,Lead actor,19589,Mari Natsuki,1,14.469741842105263,1.0,8.537,49.6655,Spirited Away,False
+All years,Lead actor,19590,Takashi Naito,1,14.469741842105263,1.0,8.537,49.6655,Spirited Away,False
+All years,Lead actor,19591,Yasuko Sawaguchi,1,14.469741842105263,1.0,8.537,49.6655,Spirited Away,False
+All years,Lead actor,1038,Jodie Foster,1,14.354890631578947,1.0,8.346,5.3795,The Silence of the Lambs,False
+All years,Lead actor,4173,Anthony Hopkins,1,14.354890631578947,1.0,8.346,5.3795,The Silence of the Lambs,False
+All years,Lead actor,15854,Ted Levine,1,14.354890631578947,1.0,8.346,5.3795,The Silence of the Lambs,False
+All years,Lead actor,16293,Anthony Heald,1,14.354890631578947,1.0,8.346,5.3795,The Silence of the Lambs,False
+All years,Lead actor,12899,Jim Varney,1,13.3719323,1.0,7.99,24.3349,Toy Story,False
+All years,Lead actor,32,Robin Wright,1,12.316140290909091,1.0,8.462,29.2116,Forrest Gump,False
+All years,Lead actor,33,Gary Sinise,1,12.316140290909091,1.0,8.462,29.2116,Forrest Gump,False
+All years,Lead actor,34,Mykelti Williamson,1,12.316140290909091,1.0,8.462,29.2116,Forrest Gump,False
+All years,Lead actor,35,Sally Field,1,12.316140290909091,1.0,8.462,29.2116,Forrest Gump,False
+All years,Lead actor,1818,Paul Winfield,1,12.2455,1.0,7.7,18.7406,The Terminator,False
+All years,Lead actor,689,Kate Capshaw,1,11.89668825,1.0,7.309,12.3117,Indiana Jones and the Temple of Doom,False
+All years,Lead actor,690,Ke Huy Quan,1,11.89668825,1.0,7.309,12.3117,Indiana Jones and the Temple of Doom,False
+All years,Lead actor,691,Amrish Puri,1,11.89668825,1.0,7.309,12.3117,Indiana Jones and the Temple of Doom,False
+All years,Lead actor,693,Roshan Seth,1,11.89668825,1.0,7.309,12.3117,Indiana Jones and the Temple of Doom,False
+All years,Lead actor,781,Paul Reiser,1,9.908997567567567,1.0,7.97,14.5196,Aliens,False
+All years,Lead actor,10206,Carrie Henn,1,9.908997567567567,1.0,7.97,14.5196,Aliens,False
+All years,Lead actor,707,Dan Aykroyd,1,9.888004,1.0,7.496,10.3828,Ghostbusters,False
+All years,Lead actor,1524,Harold Ramis,1,9.888004,1.0,7.496,10.3828,Ghostbusters,False
+All years,Lead actor,1532,Bill Murray,1,9.888004,1.0,7.496,10.3828,Ghostbusters,False
+All years,Lead actor,8872,Rick Moranis,1,9.888004,1.0,7.496,10.3828,Ghostbusters,False
+All years,Lead actor,656,Denholm Elliott,1,9.878579291666666,1.0,7.859,10.6219,Indiana Jones and the Last Crusade,False
+All years,Lead actor,738,Sean Connery,1,9.878579291666666,1.0,7.859,10.6219,Indiana Jones and the Last Crusade,False
+All years,Lead actor,739,Alison Doody,1,9.878579291666666,1.0,7.859,10.6219,Indiana Jones and the Last Crusade,False
+All years,Lead actor,4139,Tom Skerritt,1,9.539254636363637,1.0,8.176,23.6808,Alien,False
+All years,Lead actor,5047,Veronica Cartwright,1,9.539254636363637,1.0,8.176,23.6808,Alien,False
+All years,Lead actor,5048,Harry Dean Stanton,1,9.539254636363637,1.0,8.176,23.6808,Alien,False
+All years,Lead actor,5049,John Hurt,1,9.539254636363637,1.0,8.176,23.6808,Alien,False
+All years,Lead actor,65,Ian Holm,1,9.369552301075268,1.0,8.5,39.9859,The Lord of the Rings: The Fellowship of the Ring,False
+All years,Lead actor,33196,Jake Lloyd,1,9.100133991304348,1.0,6.582,10.5826,Star Wars: Episode I - The Phantom Menace,False
+All years,Lead actor,11181,Kenneth Branagh,1,8.76688482,1.0,7.71,28.3974,Harry Potter and the Chamber of Secrets,False
+All years,Lead actor,1231,Julianne Moore,1,8.474506835616438,1.0,6.565,0.5963,The Lost World: Jurassic Park,False
+All years,Lead actor,3229,Arliss Howard,1,8.474506835616438,1.0,6.565,0.5963,The Lost World: Jurassic Park,False
+All years,Lead actor,4935,Pete Postlethwaite,1,8.474506835616438,1.0,6.565,0.5963,The Lost World: Jurassic Park,False
+All years,Lead actor,1951,Elisabeth Shue,1,8.321529925,1.0,7.784,9.8404,Back to the Future Part II,False
+All years,Lead actor,15758,Queen Latifah,1,8.26248445,1.0,6.733,10.7932,Ice Age: The Meltdown,False
+All years,Lead actor,194,Richard Harris,1,8.23499692,1.0,7.905,41.365,Harry Potter and the Philosopher's Stone,False
+All years,Lead actor,10993,Tom Felton,1,8.23499692,1.0,7.905,41.365,Harry Potter and the Philosopher's Stone,False
+All years,Lead actor,1925,Vincent Cassel,1,8.161270683333333,1.0,7.8,21.9691,Shrek,False
+All years,Lead actor,12074,John Lithgow,1,8.161270683333333,1.0,7.8,21.9691,Shrek,False
+All years,Lead actor,3096,John Cazale,1,7.892307692307693,1.0,8.573,25.7646,The Godfather Part II,False
+All years,Lead actor,9364,Gloria Foster,1,7.357418777777778,1.0,8.263,38.6601,The Matrix,False
+All years,Lead actor,8977,Craig T. Nelson,1,6.863501,1.0,7.73,15.3144,The Incredibles,False
+All years,Lead actor,11662,Jason Lee,1,6.863501,1.0,7.73,15.3144,The Incredibles,False
+All years,Lead actor,18686,Holly Hunter,1,6.863501,1.0,7.73,15.3144,The Incredibles,False
+All years,Lead actor,59360,Spencer Fox,1,6.863501,1.0,7.73,15.3144,The Incredibles,False
+All years,Lead actor,59361,Sarah Vowell,1,6.863501,1.0,7.73,15.3144,The Incredibles,False
+All years,Lead actor,16851,Josh Brolin,1,6.841383463333333,1.0,8.247,47.2819,Avengers: Infinity War,False
+All years,Lead actor,5725,Goran Višnjić,1,6.495883661016949,1.0,7.388,16.8012,Ice Age,False
+All years,Lead actor,70851,Jack Black,1,6.495883661016949,1.0,7.388,16.8012,Ice Age,False
+All years,Lead actor,11064,David Strathairn,1,6.326059114285714,1.0,7.45,9.0518,The Bourne Ultimatum,False
+All years,Lead actor,14887,Paddy Considine,1,6.326059114285714,1.0,7.45,9.0518,The Bourne Ultimatum,False
+All years,Lead actor,11356,Imelda Staunton,1,6.254751586666667,1.0,7.673,23.0685,Harry Potter and the Order of the Phoenix,False
+All years,Lead actor,8873,Annie Potts,1,6.1362365371428576,1.0,7.459,12.2917,Toy Story 4,False
+All years,Lead actor,25147,Tony Hale,1,6.1362365371428576,1.0,7.459,12.2917,Toy Story 4,False
+All years,Lead actor,298410,Keegan-Michael Key,1,6.1362365371428576,1.0,7.459,12.2917,Toy Story 4,False
+All years,Lead actor,2453,Mary Steenburgen,1,6.126939575,1.0,7.494,7.524,Back to the Future Part III,False
+All years,Lead actor,1923,Robbie Coltrane,1,6.075419646153846,1.0,8.014,27.1101,Harry Potter and the Prisoner of Azkaban,False
+All years,Lead actor,140,Lucy Liu,1,6.030202533333333,1.0,7.97,14.6668,Kill Bill: Vol. 1,False
+All years,Lead actor,2535,Vivica A. Fox,1,6.030202533333333,1.0,7.97,14.6668,Kill Bill: Vol. 1,False
+All years,Lead actor,2039,Brendan Gleeson,1,5.9728069066666665,1.0,7.804,31.3937,Harry Potter and the Goblet of Fire,False
+All years,Lead actor,1003,Jean Reno,1,5.7212048875,1.0,7.036,11.0044,Mission: Impossible,False
+All years,Lead actor,4885,Emmanuelle Béart,1,5.7212048875,1.0,7.036,11.0044,Mission: Impossible,False
+All years,Lead actor,10127,Jon Voight,1,5.7212048875,1.0,7.036,11.0044,Mission: Impossible,False
+All years,Lead actor,15319,Henry Czerny,1,5.7212048875,1.0,7.036,11.0044,Mission: Impossible,False
+All years,Lead actor,7090,Kelsey Grammer,1,5.526393377777778,1.0,7.623,18.1554,Toy Story 2,False
+All years,Lead actor,1579,Maggie Gyllenhaal,1,5.451246102702703,1.0,8.5,52.5171,The Dark Knight,False
+All years,Lead actor,1810,Heath Ledger,1,5.451246102702703,1.0,8.5,52.5171,The Dark Knight,False
+All years,Lead actor,6383,Aaron Eckhart,1,5.451246102702703,1.0,8.5,52.5171,The Dark Knight,False
+All years,Lead actor,113,Christopher Lee,1,5.411652733333334,1.0,6.597,8.7592,Star Wars: Episode II - Attack of the Clones,False
+All years,Lead actor,2440,Bill Nighy,1,5.330898735,1.0,7.393,17.1258,Pirates of the Caribbean: Dead Man's Chest,False
+All years,Lead actor,3899,Ken Watanabe,1,5.2439414375,1.0,8.373,49.7497,Inception,False
+All years,Lead actor,27578,Elliot Page,1,5.2439414375,1.0,8.373,49.7497,Inception,False
+All years,Lead actor,5587,Hank Azaria,1,5.124993845454545,1.0,5.753,5.4116,The Smurfs,False
+All years,Lead actor,13593,Jonathan Winters,1,5.124993845454545,1.0,5.753,5.4116,The Smurfs,False
+All years,Lead actor,34195,Jayma Mays,1,5.124993845454545,1.0,5.753,5.4116,The Smurfs,False
+All years,Lead actor,41686,Neil Patrick Harris,1,5.124993845454545,1.0,5.753,5.4116,The Smurfs,False
+All years,Lead actor,111455,Katy Perry,1,5.124993845454545,1.0,5.753,5.4116,The Smurfs,False
+All years,Lead actor,418,Robert Patrick,1,5.076609558823529,1.0,8.178,21.6752,Terminator 2: Judgment Day,False
+All years,Lead actor,820,Edward Furlong,1,5.076609558823529,1.0,8.178,21.6752,Terminator 2: Judgment Day,False
+All years,Lead actor,147,Michael Madsen,1,5.071982033333334,1.0,7.871,11.3768,Kill Bill: Vol. 2,False
+All years,Lead actor,240171,Gordon Liu Chia-hui,1,5.071982033333334,1.0,7.871,11.3768,Kill Bill: Vol. 2,False
+All years,Lead actor,7672,Reginald VelJohnson,1,5.027427,1.0,7.818,14.8256,Die Hard,False
+All years,Lead actor,7674,Alexander Godunov,1,5.027427,1.0,7.818,14.8256,Die Hard,False
+All years,Lead actor,884,Steve Buscemi,1,5.0,1.0,7.86,20.3118,"Monsters, Inc.",False
+All years,Lead actor,1230,John Goodman,1,5.0,1.0,7.86,20.3118,"Monsters, Inc.",False
+All years,Lead actor,5563,James Coburn,1,5.0,1.0,7.86,20.3118,"Monsters, Inc.",False
+All years,Lead actor,7904,Billy Crystal,1,5.0,1.0,7.86,20.3118,"Monsters, Inc.",False
+All years,Lead actor,7905,Mary Gibbs,1,5.0,1.0,7.86,20.3118,"Monsters, Inc.",False
+All years,Lead actor,6283,Michael Nyqvist,1,4.79112675862069,1.0,7.122,9.2692,Mission: Impossible - Ghost Protocol,False
+All years,Lead actor,52851,Paula Patton,1,4.79112675862069,1.0,7.122,9.2692,Mission: Impossible - Ghost Protocol,False
+All years,Lead actor,118489,Walt Dohrn,1,4.561217375757575,1.0,6.4,12.7559,Shrek Forever After,False
+All years,Lead actor,933238,Rebecca Ferguson,1,4.55144424,1.0,7.228,9.878,Mission: Impossible - Rogue Nation,False
+All years,Lead actor,1893,Casey Affleck,1,4.524889127272727,1.0,8.5,72.248,Interstellar,False
+All years,Lead actor,10297,Matthew McConaughey,1,4.524889127272727,1.0,8.5,72.248,Interstellar,False
+All years,Lead actor,83002,Jessica Chastain,1,4.524889127272727,1.0,8.5,72.248,Interstellar,False
+All years,Lead actor,532,Joe Pantoliano,1,4.451123111111111,1.0,8.175,14.8529,Memento,False
+All years,Lead actor,534,Mark Boone Junior,1,4.451123111111111,1.0,8.175,14.8529,Memento,False
+All years,Lead actor,535,Russ Fega,1,4.451123111111111,1.0,8.175,14.8529,Memento,False
+All years,Lead actor,9030,Thandiwe Newton,1,4.371104864,1.0,6.14,7.8477,Mission: Impossible II,False
+All years,Lead actor,12206,Richard Roxburgh,1,4.371104864,1.0,6.14,7.8477,Mission: Impossible II,False
+All years,Lead actor,15336,Dougray Scott,1,4.371104864,1.0,6.14,7.8477,Mission: Impossible II,False
+All years,Lead actor,112,Cate Blanchett,1,4.252086664864865,1.0,6.027,8.0435,Indiana Jones and the Kingdom of the Crystal Skull,False
+All years,Lead actor,5538,Ray Winstone,1,4.252086664864865,1.0,6.027,8.0435,Indiana Jones and the Kingdom of the Crystal Skull,False
+All years,Lead actor,10959,Shia LaBeouf,1,4.252086664864865,1.0,6.027,8.0435,Indiana Jones and the Kingdom of the Crystal Skull,False
+All years,Lead actor,1229,Jeff Bridges,1,4.179815871428572,1.0,7.668,27.9904,Iron Man,False
+All years,Lead actor,18288,Terrence Howard,1,4.179815871428572,1.0,7.668,27.9904,Iron Man,False
+All years,Lead actor,57451,Leslie Bibb,1,4.179815871428572,1.0,7.668,27.9904,Iron Man,False
+All years,Lead actor,25136,Ken Stott,1,4.084414272,1.0,7.389,18.7851,The Hobbit: An Unexpected Journey,False
+All years,Lead actor,34715,James Nesbitt,1,4.084414272,1.0,7.389,18.7851,The Hobbit: An Unexpected Journey,False
+All years,Lead actor,6804,Graham Greene,1,4.067796288888889,1.0,7.289,10.4212,Die Hard: With a Vengeance,False
+All years,Lead actor,17351,Larry Bryggman,1,4.067796288888889,1.0,7.289,10.4212,Die Hard: With a Vengeance,False
+All years,Lead actor,3905,William H. Macy,1,3.9653850430107527,1.0,6.179,0.4636,Jurassic Park III,False
+All years,Lead actor,4939,Téa Leoni,1,3.9653850430107527,1.0,6.179,0.4636,Jurassic Park III,False
+All years,Lead actor,4940,Trevor Morgan,1,3.9653850430107527,1.0,6.179,0.4636,Jurassic Park III,False
+All years,Lead actor,4941,Alessandro Nivola,1,3.9653850430107527,1.0,6.179,0.4636,Jurassic Park III,False
+All years,Lead actor,1372,Karl Urban,1,3.84666956,1.0,7.339,8.3483,The Bourne Supremacy,False
+All years,Lead actor,71580,Benedict Cumberbatch,1,3.8336,1.0,7.58,14.8832,The Hobbit: The Desolation of Smaug,False
+All years,Lead actor,19034,Evangeline Lilly,1,3.824079152,1.0,7.342,22.4242,The Hobbit: The Battle of the Five Armies,False
+All years,Lead actor,388,Jim Broadbent,1,3.735836788,1.0,7.681,24.1262,Harry Potter and the Half-Blood Prince,False
+All years,Lead actor,2296,Clive Owen,1,3.567237066666667,1.0,7.491,10.8776,The Bourne Identity,False
+All years,Lead actor,2955,Chris Cooper,1,3.567237066666667,1.0,7.491,10.8776,The Bourne Identity,False
+All years,Lead actor,7248,Cliff Curtis,1,3.486649672727273,1.0,6.643,8.8506,Live Free or Die Hard,False
+All years,Lead actor,15033,Justin Long,1,3.486649672727273,1.0,6.643,8.8506,Live Free or Die Hard,False
+All years,Lead actor,17628,Mary Elizabeth Winstead,1,3.486649672727273,1.0,6.643,8.8506,Live Free or Die Hard,False
+All years,Lead actor,18082,Timothy Olyphant,1,3.486649672727273,1.0,6.643,8.8506,Live Free or Die Hard,False
+All years,Lead actor,3810,Javier Bardem,1,3.4605317304347825,1.0,6.666,12.9022,Pirates of the Caribbean: Dead Men Tell No Tales,False
+All years,Lead actor,115150,Kaya Scodelario,1,3.4605317304347825,1.0,6.666,12.9022,Pirates of the Caribbean: Dead Men Tell No Tales,False
+All years,Lead actor,1017347,Brenton Thwaites,1,3.4605317304347825,1.0,6.666,12.9022,Pirates of the Caribbean: Dead Men Tell No Tales,False
+All years,Lead actor,22383,Franco Nero,1,3.4290156285714284,1.0,6.972,8.8755,Die Hard 2,False
+All years,Lead actor,22384,John Amos,1,3.4290156285714284,1.0,6.972,8.8755,Die Hard 2,False
+All years,Lead actor,1922,Catherine Zeta-Jones,1,3.2976752727272727,1.0,6.572,7.8792,Ocean's Twelve,False
+All years,Lead actor,514,Jack Nicholson,1,3.2385,1.0,8.16,18.7587,The Departed,False
+All years,Lead actor,8349,Martin Sheen,1,3.2385,1.0,8.16,18.7587,The Departed,False
+All years,Lead actor,13240,Mark Wahlberg,1,3.2385,1.0,8.16,18.7587,The Departed,False
+All years,Lead actor,4391,Charles Dance,1,3.1954709,1.0,6.391,7.9407,Alien³,False
+All years,Lead actor,14468,Brian Glover,1,3.1954709,1.0,6.391,7.9407,Alien³,False
+All years,Lead actor,17764,Charles S. Dutton,1,3.1954709,1.0,6.391,7.9407,Alien³,False
+All years,Lead actor,47654,Paul McGann,1,3.1954709,1.0,6.391,7.9407,Alien³,False
+All years,Lead actor,6807,Sam Rockwell,1,3.119666655,1.0,6.856,21.1095,Iron Man 2,False
+All years,Lead actor,670,Ben Burtt,1,2.896177,1.0,8.129,19.041,WALL·E,False
+All years,Lead actor,7907,John Ratzenberger,1,2.896177,1.0,8.129,19.041,WALL·E,False
+All years,Lead actor,20753,Fred Willard,1,2.896177,1.0,8.129,19.041,WALL·E,False
+All years,Lead actor,60074,Jeff Garlin,1,2.896177,1.0,8.129,19.041,WALL·E,False
+All years,Lead actor,72754,Elissa Knight,1,2.896177,1.0,8.129,19.041,WALL·E,False
+All years,Lead actor,955,Penélope Cruz,1,2.761797535620053,1.0,6.576,14.6131,Pirates of the Caribbean: On Stranger Tides,False
+All years,Lead actor,2449,Kevin McNally,1,2.761797535620053,1.0,6.576,14.6131,Pirates of the Caribbean: On Stranger Tides,False
+All years,Lead actor,6972,Ian McShane,1,2.761797535620053,1.0,6.576,14.6131,Pirates of the Caribbean: On Stranger Tides,False
+All years,Lead actor,6968,Hugh Jackman,1,2.741907775,1.0,8.212,18.4127,The Prestige,False
+All years,Lead actor,15555,Piper Perabo,1,2.741907775,1.0,8.212,18.4127,The Prestige,False
+All years,Lead actor,1233,Philip Seymour Hoffman,1,2.65652998,1.0,6.769,8.3875,Mission: Impossible III,False
+All years,Lead actor,8289,Billy Crudup,1,2.65652998,1.0,6.769,8.3875,Mission: Impossible III,False
+All years,Lead actor,11705,Michelle Monaghan,1,2.65652998,1.0,6.769,8.3875,Mission: Impossible III,False
+All years,Lead actor,1159,Steven Bauer,1,2.64093316,1.0,8.154,18.4117,Scarface,False
+All years,Lead actor,1160,Michelle Pfeiffer,1,2.64093316,1.0,8.154,18.4117,Scarface,False
+All years,Lead actor,1161,Mary Elizabeth Mastrantonio,1,2.64093316,1.0,8.154,18.4117,Scarface,False
+All years,Lead actor,1162,Robert Loggia,1,2.64093316,1.0,8.154,18.4117,Scarface,False
+All years,Lead actor,3094,Talia Shire,1,2.532704851851852,1.0,7.413,13.6773,The Godfather Part III,False
+All years,Lead actor,3292,Nicholas Hoult,1,2.5257222666666665,1.0,7.642,20.4631,Mad Max: Fury Road,False
+All years,Lead actor,6885,Charlize Theron,1,2.5257222666666665,1.0,7.642,20.4631,Mad Max: Fury Road,False
+All years,Lead actor,26060,Hugh Keays-Byrne,1,2.5257222666666665,1.0,7.642,20.4631,Mad Max: Fury Road,False
+All years,Lead actor,1056053,Josh Helman,1,2.5257222666666665,1.0,7.642,20.4631,Mad Max: Fury Road,False
+All years,Lead actor,3897,Katie Holmes,1,2.4947911533333333,1.0,7.733,18.1643,Batman Begins,False
+All years,Lead actor,1920,Winona Ryder,1,2.3142857142857145,1.0,6.172,7.7111,Alien Resurrection,False
+All years,Lead actor,2372,Ron Perlman,1,2.3142857142857145,1.0,6.172,7.7111,Alien Resurrection,False
+All years,Lead actor,2413,Dominique Pinon,1,2.3142857142857145,1.0,6.172,7.7111,Alien Resurrection,False
+All years,Lead actor,40276,Gary Dourdan,1,2.3142857142857145,1.0,6.172,7.7111,Alien Resurrection,False
+All years,Lead actor,6194,Claire Danes,1,2.175,1.0,6.216,9.9381,Terminator 3: Rise of the Machines,False
+All years,Lead actor,6408,Nick Stahl,1,2.175,1.0,6.216,9.9381,Terminator 3: Rise of the Machines,False
+All years,Lead actor,7218,Kristanna Loken,1,2.175,1.0,6.216,9.9381,Terminator 3: Rise of the Machines,False
+All years,Lead actor,4517,Joe Pesci,1,1.88289308,1.0,8.452,20.3111,GoodFellas,False
+All years,Lead actor,7004,Paul Sorvino,1,1.88289308,1.0,8.452,20.3111,GoodFellas,False
+All years,Lead actor,11477,Ray Liotta,1,1.88289308,1.0,8.452,20.3111,GoodFellas,False
+All years,Lead actor,11478,Lorraine Bracco,1,1.88289308,1.0,8.452,20.3111,GoodFellas,False
+All years,Lead actor,21028,Anton Yelchin,1,1.856765005,1.0,6.108,8.0596,Terminator Salvation,False
+All years,Lead actor,56455,Moon Bloodgood,1,1.856765005,1.0,6.108,8.0596,Terminator Salvation,False
+All years,Lead actor,65731,Sam Worthington,1,1.856765005,1.0,6.108,8.0596,Terminator Salvation,False
+All years,Lead actor,4443,Christopher McDonald,1,1.6422462222222223,1.0,8.007,5.3724,Requiem for a Dream,False
+All years,Lead actor,6161,Jennifer Connelly,1,1.6422462222222223,1.0,8.007,5.3724,Requiem for a Dream,False
+All years,Lead actor,9560,Ellen Burstyn,1,1.6422462222222223,1.0,8.007,5.3724,Requiem for a Dream,False
+All years,Lead actor,9562,Marlon Wayans,1,1.6422462222222223,1.0,8.007,5.3724,Requiem for a Dream,False
+All years,Lead actor,819,Edward Norton,1,1.6008532222222223,1.0,8.437,36.9333,Fight Club,False
+All years,Lead actor,7470,Meat Loaf,1,1.6008532222222223,1.0,8.437,36.9333,Fight Club,False
+All years,Lead actor,585,Rutger Hauer,1,1.4900865714285714,1.0,7.937,16.2583,Blade Runner,False
+All years,Lead actor,586,Sean Young,1,1.4900865714285714,1.0,7.937,16.2583,Blade Runner,False
+All years,Lead actor,587,Edward James Olmos,1,1.4900865714285714,1.0,7.937,16.2583,Blade Runner,False
+All years,Lead actor,588,M. Emmet Walsh,1,1.4900865714285714,1.0,7.937,16.2583,Blade Runner,False
+All years,Lead actor,192,Morgan Freeman,1,1.13365876,1.0,8.734,45.414,The Shawshank Redemption,False
+All years,Lead actor,504,Tim Robbins,1,1.13365876,1.0,8.734,45.414,The Shawshank Redemption,False
+All years,Lead actor,4029,Bob Gunton,1,1.13365876,1.0,8.734,45.414,The Shawshank Redemption,False
+All years,Lead actor,6574,Clancy Brown,1,1.13365876,1.0,8.734,45.414,The Shawshank Redemption,False
