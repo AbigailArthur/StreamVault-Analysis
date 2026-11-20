@@ -7,11 +7,34 @@ from config import PROCESSED_DIR, OUTPUT_DIR
 MIN_TALENT_FILMS = 2
 
 
+def validate_credit_columns(credits):
+    """Ensure credits use the expected prepared-data schema."""
+
+    required_columns = {
+        "movie_id",
+        "person_id",
+        "name",
+        "job",
+        "character",
+        "department",
+        "order",
+    }
+
+    missing = required_columns - set(credits.columns)
+
+    if missing:
+        raise ValueError(
+            f"Credits schema is missing columns: {sorted(missing)}"
+        )
+
+
 def build_candidate_talent_metrics(movies, credits, period):
     """Retain talent counts and names at candidate level."""
 
     movies = movies.copy()
     credits = credits.copy()
+
+    validate_credit_columns(credits)
 
     has_collection = (
         movies["belongs_to_collection_id"].notna()
@@ -24,6 +47,7 @@ def build_candidate_talent_metrics(movies, credits, period):
     movies.loc[has_collection, "candidate_id"] = (
         movies.loc[has_collection, "belongs_to_collection_id"].astype(str)
     )
+
     movies.loc[has_collection, "candidate_name"] = (
         movies.loc[has_collection, "belongs_to_collection_name"]
     )
@@ -31,23 +55,24 @@ def build_candidate_talent_metrics(movies, credits, period):
     movies["candidate_type"] = "Standalone"
     movies.loc[has_collection, "candidate_type"] = "Franchise"
 
-    credits["tmdb_id"] = credits["tmdb_id"].astype(str)
+    credits["movie_id"] = credits["movie_id"].astype(str)
     movies["id"] = movies["id"].astype(str)
 
     credits = credits.merge(
         movies[["id", "candidate_id", "candidate_name", "candidate_type"]],
-        left_on="tmdb_id",
+        left_on="movie_id",
         right_on="id",
         how="inner"
     )
 
-    credits["cast_order"] = pd.to_numeric(
-        credits["cast_order"], errors="coerce"
+    credits["order"] = pd.to_numeric(
+        credits["order"], errors="coerce"
     )
 
+    # Leading cast members: first five credited actors.
     leading_cast = credits.loc[
-        (credits["credit_type"] == "cast")
-        & (credits["cast_order"] < 5)
+        (credits["job"] == "Cast")
+        & (credits["order"] < 5)
     ]
 
     cast_metrics = (
@@ -57,17 +82,17 @@ def build_candidate_talent_metrics(movies, credits, period):
         .agg(
             leading_cast_count=("person_id", "nunique"),
             leading_cast_names=(
-                "person_name",
+                "name",
                 lambda x: ", ".join(sorted(set(x.dropna())))
             )
         )
         .reset_index()
     )
 
+    # Directors.
     directors = credits.loc[
-        (credits["credit_type"] == "crew")
+        (credits["job"] == "Director")
         & (credits["department"] == "Directing")
-        & (credits["job"] == "Director")
     ]
 
     director_metrics = (
@@ -77,16 +102,18 @@ def build_candidate_talent_metrics(movies, credits, period):
         .agg(
             director_count=("person_id", "nunique"),
             director_names=(
-                "person_name",
+                "name",
                 lambda x: ", ".join(sorted(set(x.dropna())))
             )
         )
         .reset_index()
     )
 
+    # Preserve the original definition: include all producer roles.
     producers = credits.loc[
-        (credits["credit_type"] == "crew")
-        & (credits["job"].str.contains("Producer", case=False, na=False))
+        credits["job"].str.contains(
+            "Producer", case=False, na=False
+        )
     ]
 
     producer_metrics = (
@@ -96,7 +123,7 @@ def build_candidate_talent_metrics(movies, credits, period):
         .agg(
             producer_count=("person_id", "nunique"),
             producer_names=(
-                "person_name",
+                "name",
                 lambda x: ", ".join(sorted(set(x.dropna())))
             )
         )
@@ -126,7 +153,9 @@ def build_candidate_talent_metrics(movies, credits, period):
     )
 
     count_columns = [
-        "leading_cast_count", "director_count", "producer_count"
+        "leading_cast_count",
+        "director_count",
+        "producer_count"
     ]
 
     candidates[count_columns] = (
@@ -144,8 +173,10 @@ def build_person_talent_metrics(movies, credits, period):
     movies = movies.copy()
     credits = credits.copy()
 
+    validate_credit_columns(credits)
+
     movies["id"] = movies["id"].astype(str)
-    credits["tmdb_id"] = credits["tmdb_id"].astype(str)
+    credits["movie_id"] = credits["movie_id"].astype(str)
 
     movie_metrics = movies[
         [
@@ -168,37 +199,36 @@ def build_person_talent_metrics(movies, credits, period):
 
     joined = credits.merge(
         movie_metrics,
-        left_on="tmdb_id",
+        left_on="movie_id",
         right_on="id",
         how="inner"
     )
 
-    joined["cast_order"] = pd.to_numeric(
-        joined["cast_order"], errors="coerce"
+    joined["order"] = pd.to_numeric(
+        joined["order"], errors="coerce"
     )
 
     lead_actors = joined.loc[
-        (joined["credit_type"] == "cast")
-        & (joined["cast_order"] < 5)
+        (joined["job"] == "Cast")
+        & (joined["order"] < 5)
     ].copy()
 
     directors = joined.loc[
-        (joined["credit_type"] == "crew")
+        (joined["job"] == "Director")
         & (joined["department"] == "Directing")
-        & (joined["job"] == "Director")
     ].copy()
 
     def summarize_people(data, talent_type):
 
         data = data.drop_duplicates(
-            subset=["person_id", "tmdb_id"]
+            subset=["person_id", "movie_id"]
         )
 
         summary = (
             data.groupby("person_id")
             .agg(
-                person_name=("person_name", "first"),
-                film_count=("tmdb_id", "nunique"),
+                person_name=("name", "first"),
+                film_count=("movie_id", "nunique"),
                 median_revenue_to_budget=("revenue_to_budget", "median"),
                 share_films_revenue_above_budget=(
                     "revenue_to_budget",
@@ -252,6 +282,8 @@ def run_pipeline():
     movies = pd.read_csv(PROCESSED_DIR / "analysis_movies.csv")
     credits = pd.read_csv(PROCESSED_DIR / "credits.csv")
 
+    validate_credit_columns(credits)
+
     # All-years analysis
     all_candidate_metrics = build_candidate_talent_metrics(
         movies, credits, "All years"
@@ -265,7 +297,7 @@ def run_pipeline():
     recent_movies = movies.loc[movies["release_year"] >= 2000]
 
     recent_credits = credits[
-        credits["tmdb_id"].astype(str).isin(
+        credits["movie_id"].astype(str).isin(
             recent_movies["id"].astype(str)
         )
     ]
@@ -278,7 +310,7 @@ def run_pipeline():
         recent_movies, recent_credits, "2000 onward"
     )
 
-    # Save existing candidate-level outputs
+    # Save candidate-level outputs
     all_candidate_metrics.to_csv(
         OUTPUT_DIR / "talent_metrics_all_years.csv",
         index=False
@@ -289,7 +321,7 @@ def run_pipeline():
         index=False
     )
 
-    # Save new individual talent track-record outputs
+    # Save individual talent track-record outputs
     all_person_metrics.to_csv(
         OUTPUT_DIR / "talent_person_metrics_all_years.csv",
         index=False

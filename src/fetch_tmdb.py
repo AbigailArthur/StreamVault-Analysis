@@ -1,7 +1,7 @@
 
-
 import json
 import time
+import re
 import requests
 import pandas as pd
 
@@ -19,6 +19,25 @@ from config import (
 )
 
 
+def normalize_movie_id(value):
+    """Normalize TMDb IDs, including float-formatted values."""
+
+    if pd.isna(value):
+        return None
+
+    value = str(value).strip()
+
+    # Convert values such as 155.0 or "155.0" to "155"
+    if re.fullmatch(r"[1-9]\d*\.0+", value):
+        value = value.split(".")[0]
+
+    # Accept only positive whole-number IDs
+    if not re.fullmatch(r"[1-9]\d*", value):
+        return None
+
+    return value
+
+
 def create_session():
     retry = Retry(
         total=3,
@@ -33,6 +52,7 @@ def create_session():
         "Authorization": f"Bearer {TOKEN}",
         "accept": "application/json"
     })
+
     return session
 
 
@@ -42,6 +62,7 @@ def fetch_data(session, endpoint):
         timeout=30
     )
     response.raise_for_status()
+
     return response.json()
 
 
@@ -55,18 +76,20 @@ def run_acquisition():
     # Read original candidate list
     df = pd.read_csv(DATA_FILE, dtype=str)
 
+    if "tmdb_id" not in df.columns:
+        raise ValueError("Candidate list must contain a 'tmdb_id' column.")
+
     audit = pd.DataFrame({
         "source_row": range(2, len(df) + 2),
         "tmdb_id": df["tmdb_id"]
     })
 
-    audit["normalized_tmdb_id"] = (
-        audit["tmdb_id"].str.strip()
+    # Normalize IDs consistently
+    audit["normalized_tmdb_id"] = audit["tmdb_id"].apply(
+        normalize_movie_id
     )
 
-    valid = audit["normalized_tmdb_id"].str.fullmatch(
-        r"[1-9]\d*", na=False
-    )
+    valid = audit["normalized_tmdb_id"].notna()
 
     duplicate = (
         valid
@@ -74,10 +97,22 @@ def run_acquisition():
     )
 
     audit["record_status"] = "invalid_id"
-    audit.loc[audit["tmdb_id"].isna() |
-              audit["normalized_tmdb_id"].eq(""), "record_status"] = "missing_id"
-    audit.loc[valid & ~duplicate, "record_status"] = "pending_fetch"
-    audit.loc[duplicate, "record_status"] = "duplicate_id"
+
+    audit.loc[
+        audit["tmdb_id"].isna()
+        | audit["tmdb_id"].str.strip().eq(""),
+        "record_status"
+    ] = "missing_id"
+
+    audit.loc[
+        valid & ~duplicate,
+        "record_status"
+    ] = "pending_fetch"
+
+    audit.loc[
+        duplicate,
+        "record_status"
+    ] = "duplicate_id"
 
     audit["canonical_tmdb_id"] = audit["normalized_tmdb_id"]
 
@@ -100,6 +135,7 @@ def run_acquisition():
                 session, f"movie/{movie_id}"
             )
             details_ok = True
+
         except requests.RequestException as error:
             print(f"Movie {movie_id} details failed: {error}")
 
@@ -110,6 +146,7 @@ def run_acquisition():
                 session, f"movie/{movie_id}/credits"
             )
             credits_ok = True
+
         except requests.RequestException as error:
             print(f"Movie {movie_id} credits failed: {error}")
 
@@ -121,7 +158,8 @@ def run_acquisition():
         )
 
         audit.loc[
-            (audit["normalized_tmdb_id"] == movie_id) & (~duplicate),
+            (audit["normalized_tmdb_id"] == movie_id)
+            & (~duplicate),
             "record_status"
         ] = status
 
@@ -130,15 +168,23 @@ def run_acquisition():
         ("movie_details.json", movie_data),
         ("movie_credits.json", credits_data)
     ]:
-        with open(RAW_DIR / filename, "w", encoding="utf-8") as file:
+        with open(
+            RAW_DIR / filename,
+            "w",
+            encoding="utf-8"
+        ) as file:
             json.dump(data, file, indent=2, ensure_ascii=False)
 
     # Save complete audit and quarantine records
-    audit.to_csv(PROCESSED_DIR / "id_audit.csv", index=False)
+    audit.to_csv(
+        PROCESSED_DIR / "id_audit.csv",
+        index=False
+    )
 
     quarantine = audit[
         audit["record_status"] != "success"
     ]
+
     quarantine.to_csv(
         QUARANTINE_DIR / "quarantined_records.csv",
         index=False
@@ -148,7 +194,10 @@ def run_acquisition():
     print("-----------------------")
     print("Input rows:", len(audit))
     print("Unique valid IDs:", valid.sum() - duplicate.sum())
-    print("Successful fetches:", (audit["record_status"] == "success").sum())
+    print(
+        "Successful fetches:",
+        (audit["record_status"] == "success").sum()
+    )
     print("Quarantined records:", len(quarantine))
     print("Movie details retrieved:", len(movie_data))
     print("Credits retrieved:", len(credits_data))
